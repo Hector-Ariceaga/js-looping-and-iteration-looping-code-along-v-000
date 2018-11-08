@@ -4,3 +4,5 @@ function printBadges(names) {
   }
   return names
 }
+
+printBadges(names);
