@@ -8,11 +8,7 @@ function printBadges(names) {
 function tailsNeverFails() {
   let count = 0;
   
-  function flipCoin() {
-    return Math.random() >= 0.5;
-  }
-  
-  while (flipCoin()) {
+  while (Math.random() >= 0.5) {
     ++count;
   }
   return (`You got ${count} tails in a row!`);
