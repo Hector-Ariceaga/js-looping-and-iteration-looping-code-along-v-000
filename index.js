@@ -7,19 +7,19 @@ function printBadges(names) {
 
 function tailsNeverFails() {
   let count = 0;
-  let result = 'tails'
+  let result = null;
   
   function flipCoin() {
     if (Math.random() >= 0.5) {
-      result = 'tails'
+      result = 'tails';
     }
     else {
-      result = 'heads'
+      result = 'heads';
     }
-    count++
+    count++;
   }
   
-  while (result != 'heads') {
+  while (result === 'tails') {
     flipCoin();
   }
   return (`You got ${count} tails in a row!`);
