@@ -8,5 +8,6 @@ function printBadges(names) {
 printBadges(names);
 
 function tailsNeverFails() {
-  
+  let count = 0;
+  while (count)
 }
