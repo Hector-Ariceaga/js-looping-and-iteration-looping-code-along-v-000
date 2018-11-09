@@ -9,5 +9,13 @@ printBadges(names);
 
 function tailsNeverFails() {
   let count = 0;
-  while (count)
+  
+  function maybeTrue() {
+    return Math.random() >= 0.5;
+  }
+  
+  while (maybeTrue) {
+    count++
+  }
+  
 }
