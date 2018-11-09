@@ -9,14 +9,13 @@ printBadges(names);
 
 function tailsNeverFails() {
   let count = 0;
-  let tails = 0;
   
   function maybeTrue() {
     return Math.random() >= 0.5;
   }
   
   while (maybeTrue) {
-    count++, 
+    ++count
   }
   console.log(`You got ${count} tails in a row!`)
 }
